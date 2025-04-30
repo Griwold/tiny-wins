@@ -30,7 +30,7 @@ lerna-debug.log*
 
 # IDE - VSCode
 .vscode/*
-!.vscode/settings.json
+.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
@@ -54,3 +54,23 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Docker
+*.log
+*.pid
+*.bak
+*.swp
+
+# Docker Compose override files
+docker-compose.yml
+
+# Docker volumes
+volumes/
+data/
+tmp/
+*.tar
+
+# Docker environment files (si no querés commitear tus variables de entorno)
+.env
+.env.local
+.env.*.local
